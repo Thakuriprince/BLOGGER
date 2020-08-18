@@ -16,6 +16,7 @@ html,body{
 
     /* gradient color*/
     --sky: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    --blue: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 
     /* theme font-family: */
     --Abel: 'Abel', cursive;
@@ -76,6 +77,10 @@ span{
     color: var(--text-gray);
 }
 
+p{
+    font-family: var(--Livvic);
+    color: var(--text-light);
+}
 
 
 
@@ -281,7 +286,7 @@ span{
 
     main .post-content{
         width: 100%;
-        margin-bottom: 5rem;
+        
     }
 
     main .site-content .post-content> .post-image, .post-title{
@@ -298,12 +303,46 @@ span{
         border-radius: 3rem;
     }
 
-    main .site-content> .post-image > div{
+    main .site-content .post-content> .post-image > div{
         overflow: hidden;
     }
 
     main .site-content .post-content> .post-image .img{
         width: 100%;
+        transition: all 1s ease;
+    }
+
+    main .site-content .post-content> .post-image .img:hover{
+        transform: scale(1.3);
+    }
+
+    main .post-content .post-title a{
+        font-family: var(--Anton);
+        font-size: 1.5rem;
+    }
+
+    .site-content .post-content .post-title .post-btn{
+        border-radius: 0;
+        padding: .7rem 1.5rem;
+        background: var(--blue);
+    }
+
+    .site-content .pagination{
+        justify-content: center;
+        color: var(--text-gray);
+        margin: 4rem 0;
+    }
+
+    .site-content .pagination a{
+        padding: .6rem .9rem;
+        border-radius: 2rem;
+        margin: 0 .3rem;
+        font-family: var(--Livvic);
+    }
+
+    .site-content .pagination .pages{
+        background: var(--text-gray);
+        color: var(--white);
     }
 
 
@@ -315,7 +354,57 @@ span{
 
   /*---------------end site content------------------*/ 
 
+  /*-----------------sidebar-------------------------*/
+    
+  .site-content > .sidebar .category-list{
+      font-family: var(--Roboto);
+  }
 
+  .site-content > .sidebar .category-list .list-items{
+      background: var(--blue);
+      padding: .4rem 1rem;
+      margin: .8rem 0;
+      border-radius: 3rem;
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+        }
+
+    .site-content > .sidebar .category-list .list-items a{
+        color: black;
+    }
+
+    .site-content .sidebar .popular-post .post-content{
+        padding: 1rem 0;
+    }
+
+    .site-content .sidebar .popular-post h2{
+        padding-top: 8rem;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        padding: .4rem .1rem !important;
+        bottom: 0rem !important;
+        left: 1rem !important;
+        border-radius: 0rem !important;
+        background: white !important; 
+    }
+
+    .site-content .sidebar .popular-post .post-title a{
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+  /*-----------------End sidebar-------------------------*/
 
 
 /*-----------------------End Main content----------*/
