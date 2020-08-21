@@ -477,11 +477,37 @@ footer.footer .newsletter .form-element span{
     cursor: pointer;
 }
 
+footer.footer .instagram div>img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
 
+footer.footer .follow div i{
+    color: var(--white);
+    padding: 0.4rem;
+}
 
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Abel);
+}
 
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
 
+footer.footer .move-up span{
+    color: var(--midnight);
+}
 
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
 
 
 
